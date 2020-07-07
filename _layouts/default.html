@@ -2,6 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "he" }}" dir="rtl" style="background:grey;">
 
   {%- include head.html -%}
+  <head>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ site.baseurl }}/assets/images/logo.svg" />
+  </head>
 
   <body>
 
