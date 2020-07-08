@@ -19,7 +19,7 @@ layout: default
       {{ page.hero.text }}
     </p>
   </h2>
-  <a class="btn-black" href="/crisis/">
+  <a class="btn-black" href="{{site.baseurl}}crisis/">
     {{ page.read-more }}
   </a>
 </div>
@@ -66,7 +66,7 @@ layout: default
 		</a>
 	</div>
 	<div class="square-margin">
-		<a class="square square-blue" href="/crisis/">
+		<a class="square square-blue" href="{{site.baseurl}}crisis/">
 			<div class="flex flex-column flex-justify-center h-100 square-content">
 				<img src="assets/images/prayinghands.svg" alt="prayinghands" class="square-image">
 				<div class="square-text">
@@ -76,7 +76,7 @@ layout: default
 		</a>
 	</div>
 	<div class="square-margin">
-		<a class="square square-blue" href="/act-now/">
+		<a class="square square-blue" href="{{site.baseurl}}act-now/">
 			<div class="flex flex-column flex-justify-center h-100 square-content">
 				<img src="assets/images/bee.svg" alt="bee" class="square-image">
 				<div class="square-text">
@@ -87,7 +87,7 @@ layout: default
 	</div>
 </section>
 
-<section class="events pb-2 pt-1">
+<section class="events-section pb-2 pt-1">
 	<h2 class="text-white events-title mx-30 text-lg">אירועים</h2>
 
 	<div class="event mx-30 mt-1">
@@ -102,7 +102,37 @@ layout: default
 		<p class="text-sm">תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית</p>
 		<a class="btn-black mb-2" href="#">להרשמה</a>
 	</div>
-	<a class="btn-black mb-2" href="#">לכל האירועים ></a>
+	<a class="btn-black mb-2" href="{{site.baseurl}}events/">לכל האירועים ></a>
+</section>
+
+<section class="news-section pb-2 pt-1">
+	<h2 class="text-white news-title mx-30 text-lg">חדשות</h2>
+
+	<div class="news mx-30 mt-1">
+		<h2 class="mb-0 text-lg">כותרת חדשות 1</h2>
+		<p class="text-sm">תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית</p>
+		<a class="btn-black mb-2" href="{{site.baseurl}}news/">קראו עוד</a>
+	</div>
+	<div class="news mx-30 mt-1">
+		<h2 class="mb-0 text-lg">כותרת חדשות 1</h2>
+		<p class="text-sm">תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית</p>
+		<a class="btn-black mb-2" href="{{site.baseurl}}news/">קראו עוד</a>
+	</div>
+
+	<a class="btn-black mb-2" href="{{site.baseurl}}news/">לכל החדשות ></a>
+</section>
+
+<section class="social-section mt-2">
+	<div class="social-icons">
+		<img src="assets/images/facebook-pink.svg" alt="facebook" class="mx-1 social-icon">
+		<img src="assets/images/instagram-pink.svg" alt="instagram" class="mx-1 social-icon">
+		<img src="assets/images/twitter-pink.svg" alt="twitter" class="mx-1 social-icon">
+	</div>
+	<div class="global-site text-center text-lg">
+		<a class="text-pink">
+			לאתר המרד העולמי >
+		</a>
+	</div>
 </section>
   {{ content }}
 <!--
