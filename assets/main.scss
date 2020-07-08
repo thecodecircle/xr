@@ -4,12 +4,12 @@
 @import "{{ site.theme }}";
 @font-face {
   font-family: "Almoni";
-  src: url("{{site.base_url}}/assets/fonts/Almoni-Neue-DL-4-AAA-Bold.ttf");
+  src: url("assets/fonts/Almoni-Neue-DL-4-AAA-Bold.ttf");
 }
 @font-face {
   font-family: "Alef";
-  src: url("{{site.base_url}}/assets/fonts/Alef-Bold.ttf");
-  src: url("{{site.base_url}}/assets/fonts/Alef-Regular.ttf");
+  src: url("assets/fonts/Alef-Bold.ttf");
+  src: url("assets/fonts/Alef-Regular.ttf");
 }
 
 $almoni:                "Almoni";
@@ -184,7 +184,7 @@ a:visited{
   color: white
 }
 .hero-bg{
-  background-image: url("{{site.base_url}}/assets/images/diein.jpeg");
+  background-image: url("assets/images/diein.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
