@@ -20,12 +20,15 @@ $brand-color-dark:      lighten($brand-color, 0%) !default;
 
 $site-title-color:      $brand-color-dark !default;
 $text-color:            #fff;
+$yellow:								#FFC11F;
+$pink:									#C80082;
+
 
 body{
   font-family: $almoni
 }
 .site-header {
-  background-color: #C80082;
+  background-color: $pink;
   color: #fff;
   height: 70px;
   border: 0;
@@ -38,6 +41,7 @@ body{
 }
 .page-content{
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 
@@ -111,7 +115,18 @@ body{
   color: white;
 }
 .text-secondary{
-  color: #FFC11F
+  color: $yellow
+}
+.bg-yellow{
+	background: $yellow;
+}
+.act-now-squares{
+	// padding-top: 1rem;
+	padding: 1rem 0 1rem 0;
+	flex-direction: column;
+}
+.act-now-title{
+	width: 50%
 }
 .absolute{
   position: absolute;
@@ -211,6 +226,20 @@ a:visited{
 .about-btn{
 	// margin-top: 1rem;
 }
+.bg-act-now{
+	background-image: url("images/forest.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 6rem !important;
+	line-height: 0.8;
+	text-align: center;
+}
 .square-margin{
 	width: 90%;
 	background-color: white;
@@ -219,11 +248,15 @@ a:visited{
 .square-blue{
 	background-color: #32439C;
 }
+.square-pink{
+	background-color: $pink;
+}
 .square{
 	display: block;
 	height: 50%;
 	padding-top: 100%;
 	position: relative;
+
 }
 
 
@@ -237,7 +270,7 @@ a:visited{
 }
 
 .text-pink{
-	color: #C80082;
+	color: $pink;
 }
 .social-section{
 	display: flex;
@@ -257,7 +290,7 @@ a:visited{
 	text-align: center;
 }
 .news-section{
-	background-color: #FFC11F;
+	background-color: $yellow;
 	text-align: center;
 }
 .flex-justify-between{
@@ -296,6 +329,8 @@ a{
 .mb-0{
 	margin-bottom: 0;
 }
+.act-now-move-up{}
+
 // only mobile
 @media only screen and (max-width: 600px) {
   .table-caption{
@@ -320,6 +355,9 @@ a{
   }
 }
 @media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 1000px) {
 
 }
 //only desktop
@@ -348,5 +386,17 @@ a{
         }
       }
     }
-
+	.act-now-squares{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.square-margin{
+		width:25%;
+	}
+	.act-now-move-up{
+		transform: translate(0, -10rem);
+	}
+	.square-text{
+		font-size: 2.5vw;
+	}
 }
