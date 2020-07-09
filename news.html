@@ -11,19 +11,17 @@ order: 4
 	</div>
 </div>
 
-<section class="posts">
+<div class="news mx-30 mt-1">
 	{% for post in site.posts %}
-		<article class="post">
-      <h1>
-      	<a href="{{ site.baseurl }}{{ post.url }}">
-      		{{ post.title }}
-      	</a>
-      </h1>
+		<article class="post mb-2">
 			<div class="image">
 				<img src="{{ post.featured_image }}" alt="{{ post.title }}">
 			</div>
-
-			<p><a class="button" href="{{ site.baseurl }}{{ post.url }}">קראו עוד</a></p>
+      <h2 class="mb-1 mt-1 text-lg line-height-1">
+      		{{ post.title }}
+      </h2>
+			<div class="alef font-bold text-sm mb-2">{{ post.subtitle }}</div>
+			<a class="btn-black mb-2" href="{{ site.baseurl }}{{ post.url }}">קראו עוד</a>
 		</article>
 	{% endfor %}
-</section>
+</div>

@@ -6,7 +6,14 @@ layout: default
 	<div class="image">
 		<img src="{{ page.featured_image }}" alt="{{ page.title }}">
 	</div>
-
-	<div class="post-body">
-		{{ content }}
+	<div class="article">
+		<h2 class="mb-1 mt-1 text-lg line-height-1">
+			{{ page.title }}
+		</h2>
+		<div class="alef font-bold text-sm mb-2">{{ page.subtitle }}</div>
+		<div class="post-body alef font-bold">
+			{{ content }}
+		</div>
 	</div>
+
+</article>

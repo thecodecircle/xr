@@ -1,0 +1,35 @@
+---
+layout: default
+title: הצטרפו אלינו
+permalink: /join-us/
+order: 6
+---
+<div class="join-us-header page-headers pb-2 ">
+	<div class="mt-1">
+		הצטרפו אלינו
+	</div>
+	<div class="">
+		<div class="alef font-bold text-sm line-height-normal contents join-us-telegram">
+			<p>
+				תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום.
+				ישראל נמצאת במצב פגיע במיוחד …
+			</p>
+			<a href="#" class="btn-black btn-pink mt-1">להצטרפות לטלגרם</a>
+		</div>
+	</div>
+</div>
+
+	<div class="join-us-squares  flex flex-align-center flex-justify-center ">
+		{% for square in site.data.join-us %}
+		<div class="square-margin">
+			<a class="square square-black" href="#">
+				<div class="flex flex-column flex-justify-center h-100 square-content">
+					<img src="{{site.baseurl}}/assets/images/{{square.icon}}.svg" alt="{{square.icon}}" class="square-image">
+					<div class="square-text">
+						{{ square.name }}
+					</div>
+				</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>

@@ -1,0 +1,23 @@
+- name: טוויטר
+  icon: twitter
+  link:
+
+- name: פייסבוק
+  icon: facebook
+  link:
+
+- name: איסטגרם
+  icon: instagram
+  link:
+
+- name: אינסטגרם הבריגדה האדומה
+  icon: instagram
+  link:
+
+- name: אתר XR העולמי
+  icon: world
+  link:
+
+- name: אתר XR הבריטי
+  icon: uk
+  link:
