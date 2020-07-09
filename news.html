@@ -5,13 +5,6 @@ permalink: /news/
 order: 4
 ---
 
-{% comment %}
-{% for post in site.posts %}
-  <img src="{{ post.featured_image }}" alt="post.title">
-  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
-{% endcomment %}
-
 <section class="posts">
 	{% for post in site.posts %}
 		<article class="post">
