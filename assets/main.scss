@@ -22,6 +22,8 @@ $site-title-color:      $brand-color-dark !default;
 $text-color:            #fff;
 $yellow:								#FFC11F;
 $pink:									#C80082;
+$lightblue:							#76C6DD;
+$green:									#43A047;
 
 
 body{
@@ -220,26 +222,24 @@ a:visited{
 	padding: 0 30px 0 30px;
 	margin-bottom: 1rem;
 }
+.about-page-content{
+	flex-direction: column;
+	font-size: 1.1rem;
+	padding: 2rem 30px 2rem 30px;
+}
+
+.contents{
+	flex-direction: column;
+	font-size: 1.1rem;
+	padding: 2rem 30px 2rem 30px;
+}
 .pb-4{
 	padding-bottom: 4rem;
 }
 .about-btn{
 	// margin-top: 1rem;
 }
-.bg-act-now{
-	background-image: url("images/forest.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 50vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-size: 6rem !important;
-	line-height: 0.8;
-	text-align: center;
-}
+
 .square-margin{
 	width: 90%;
 	background-color: white;
@@ -271,6 +271,12 @@ a:visited{
 
 .text-pink{
 	color: $pink;
+}
+.text-green{
+	color: $green;
+}
+.alef{
+	font-family: $alef !important;
 }
 .social-section{
 	display: flex;
@@ -331,6 +337,37 @@ a{
 }
 .act-now-move-up{}
 
+.page-headers{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 6rem !important;
+	line-height: 0.8;
+	text-align: center;
+}
+.bg-act-now{
+	background-image: url("images/forest.webp");
+}
+.events-header{
+	background-image: url("images/brigade.webp");
+}
+.about-header{
+	background-image: url("images/about.webp");
+}
+.bg-lightblue{
+	background: $lightblue;
+}
+.bg-green{
+	background: $green;
+}
+.events-events{
+	padding-top: 2rem
+}
 // only mobile
 @media only screen and (max-width: 600px) {
   .table-caption{
@@ -398,5 +435,8 @@ a{
 	}
 	.square-text{
 		font-size: 2.5vw;
+	}
+	.page-headers{
+		height: 75vh;
 	}
 }
