@@ -1,0 +1,23 @@
+---
+layout: default
+title: חדשות
+permalink: /news/
+order: 4
+---
+
+<section class="posts">
+	{% for post in site.posts %}
+		<article class="post">
+      <h1>
+      	<a href="{{ site.baseurl }}{{ post.url }}">
+      		{{ post.title }}
+      	</a>
+      </h1>
+			<div class="image">
+				<img src="{{ post.featured_image }}" alt="{{ post.title }}">
+			</div>
+
+			<p><a class="button" href="{{ site.baseurl }}{{ post.url }}">קראו עוד</a></p>
+		</article>
+	{% endfor %}
+</section>
