@@ -90,18 +90,22 @@ layout: default
 <section class="events-section pb-2 pt-1">
 	<h2 class="text-white events-title mx-30 text-lg">אירועים</h2>
 
-	<div class="event mx-30 mt-1">
-		<h2 class="text-white mb-0 text-lg">24.1.20</h2>
-		<h3 class="text-white mb-0 text-md">חוג בית בהוד השרון</h3>
-		<p class="text-sm">תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית</p>
-		<a class="btn-black mb-2" href="#">להרשמה</a>
-	</div>
-	<div class="event mx-30 mt-1">
-		<h2 class="text-white mb-0 text-lg">24.1.20</h2>
-		<h3 class="text-white mb-0 text-md">חוג בית בהוד השרון</h3>
-		<p class="text-sm">תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית</p>
-		<a class="btn-black mb-2" href="#">להרשמה</a>
-	</div>
+  {% assign events_array = site.data.events | sort: 'date' %}
+  {% assign event_num = events_array.size | minus: 4 %}
+  {% for event in events_array %}
+    {% if forloop.index > event_num %}
+    	<div class="event mx-30 mt-1">
+        {% comment %}
+        {% assign date_display = event.date | split: "-" | reverse %}
+        {% assign date_display[2] = date_display[2] | slice: 2, 2 %}
+        {% endcomment %}
+    		<h2 class="text-white mb-0 text-lg">{{ event.date | split: "-" | reverse | join: "." }}</h2>
+    		<h3 class="text-white mb-0 text-md">{{ event.title }}</h3>
+    		<p class="text-sm">{{ event.description }}</p>
+    		<a class="btn-black mb-2" href={{ event.link }}>להרשמה</a>
+    	</div>
+    {% endif %}
+  {% endfor %}
 	<a class="btn-black mb-2" href="{{site.baseurl}}events/">לכל האירועים ></a>
 </section>
 
