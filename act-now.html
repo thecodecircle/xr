@@ -14,7 +14,7 @@ order: 2
 	<div class="act-now-move-up  act-now-squares  flex flex-align-center flex-justify-center ">
 		{% for square in site.data.act-now %}
 		<div class="square-margin">
-			<a class="square square-{{square.color}}" href="{{site.baseurl}}/{{square.link}}">
+			<a class="square square-{{square.color}}" href="{{site.baseurl}}/about{{square.link}}">
 				<div class="flex flex-column flex-justify-center h-100 square-content">
 					<img src="{{site.baseurl}}/assets/images/{{square.image}}.svg" alt="{{square.image}}" class="square-image">
 					<div class="square-text">
