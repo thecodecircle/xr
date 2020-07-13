@@ -4,14 +4,16 @@ title: פעלו עכשיו
 permalink: /act-now/
 order: 2
 ---
-<div class="bg-act-now page-headers">
-	<div class="act-now-title">
-		{{page.title}}
+<div class=" bg-act-now  page-headers">
+	<div class="overlay page-overlay flex flex-align-center flex-justify-center flex-column ">
+		<div class="act-now-title">
+			{{page.title}}
+		</div>
 	</div>
 </div>
 
 <div class="bg-yellow">
-	<div class="act-now-move-up  act-now-squares  flex flex-align-center flex-justify-center ">
+	<div class="act-now-move-up  act-now-squares  flex flex-align-center flex-justify-center  mx-2rem">
 		{% for square in site.data.act-now %}
 		<div class="square-margin">
 			<a class="square square-{{square.color}}" href="#">

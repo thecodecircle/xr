@@ -135,7 +135,7 @@ body{
 	flex-direction: column;
 }
 .act-now-title{
-	width: 50%
+	width: 50%;
 }
 .absolute{
   position: absolute;
@@ -390,6 +390,10 @@ a{
 	line-height: 0.8;
 	text-align: center;
 }
+.page-overlay{
+	height: 100%;
+	width: 100%;
+}
 .bg-act-now{
 	background-image: url("images/forest.webp");
 }
@@ -457,6 +461,9 @@ a{
 	.padding-hero{
 		padding-top: 25vw;
 		padding-bottom: 30vw;
+	}
+	.act-now-title{
+		width: 100%;
 	}
 }
 @media only screen and (min-width: 1000px) {
@@ -590,6 +597,9 @@ a{
 	}
 	.square-image{
 		margin-bottom: 1vw;
+	}
+	.square-margin{
+		margin: 2rem;
 	}
 	// .basic-padding{
 	// 	padding: 0 5vw 0 5vw;
