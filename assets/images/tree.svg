@@ -8,27 +8,27 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="197"
-   height="172"
-   viewBox="0 0 197 172"
+   width="498"
+   height="432"
+   viewBox="0 0 498 432"
    version="1.1"
-   id="svg7"
+   id="svg8"
    sodipodi:docname="tree.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata13">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Illustrations-09@3x</dc:title>
+        <dc:title>Logo_mask copy@3x</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs11" />
+     id="defs12" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,36 +38,28 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1029"
-     id="namedview9"
+     inkscape:window-width="725"
+     inkscape:window-height="480"
+     id="namedview10"
      showgrid="false"
+     inkscape:zoom="0.71277877"
+     inkscape:cx="248.99999"
+     inkscape:cy="216"
+     inkscape:window-x="1149"
+     inkscape:window-y="522"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="0.81944444"
-     inkscape:cx="129.56037"
-     inkscape:cy="-50.090587"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="XRIL-act-now" />
+     fit-margin-bottom="0" />
   <title
-     id="title2">Illustrations-09@3x</title>
-  <g
-     id="Page-1"
-     style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-opacity:1"
-     transform="translate(15.5,14)">
-    <g
-       id="XRIL-act-now"
-       transform="translate(-250,-1395)"
-       style="fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-opacity:1">
-      <image
-         y="1381"
-         x="234.5"
-         id="image836"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfIAAAGwCAYAAABSAee3AAAAAXNSR0IArs4c6QAAQABJREFUeAHs
+     id="title2">Logo_mask copy@3x</title>
+  <image
+     y="0"
+     x="0"
+     id="image843"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfIAAAGwCAYAAABSAee3AAAAAXNSR0IArs4c6QAAQABJREFUeAHs
 nQW4HTX6uP9AS3H3UloKxd21xd3dizssumih6OJuixWXxWFxaHEv7rS0uLsVKft/32Eyv5zcmXPv
 LYVdYL7neZvki0zmSyZfMuec2//3/2qpLVBb4E9tgf/85z+jwB7wCMz1p77Z+uZqC9QWqC1QW6C2
 wJ/NAjjvDnAfKJfBmH+2e6zvp7bAX9kCo/6Vb76+99oCfyELjJLf67qEy/yF7ru+1doCtQVqC9QW
@@ -2443,9 +2435,7 @@ OzlotVeNbELwJyA6HmT/pINwfqBleB1iE/0VaK+zZsm9B5oaVYYGQgOhgdBAaCA0UK8GMMxTg5eA
 vthWfCQFfj6gQ21PAnnlNa+r1Vt/5AsNhAZCA6GB0EBooAc1gIEeAvRqVqt/XoFsGIhXhnpQ/1F1
 aCA0EBoIDYQGuqQBDLWW3ItPaHapsigcGggNhAYaRAP/DzrfOWYLFcMGAAAAAElFTkSuQmCC
 "
-         preserveAspectRatio="none"
-         height="172"
-         width="197" />
-    </g>
-  </g>
+     preserveAspectRatio="none"
+     height="432"
+     width="498" />
 </svg>

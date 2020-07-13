@@ -24,7 +24,7 @@ layout: default
 </section>
 
 <div class="absolute w-50 left-50">
-  <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass">
+  <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass  h-10vw">
 </div>
 
 <section class="about  w-100 text-white font-bold pb-4 ">
@@ -57,14 +57,14 @@ layout: default
 				אנחנו מבססים את הדרישות שלנו על גוף-הידע המתפרסם על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
 			</p>
 			<br>
-			<a class="about-btn btn-black" href="/crisis/">
+			<a class="about-btn btn-black" href="{{site.baseurl}}/crisis/">
 				{{ page.read-more }}
 			</a>
 	  </p>
 	</div>
 </section>
 
-<img src="assets/images/group.svg" alt="illustration group" class="image-group">
+<img src="assets/images/group.png" alt="illustration group" class="image-group">
 
 <section class="third-section flex flex-align-center flex-justify-center px-2">
 	<div class="square-margin">
@@ -173,4 +173,5 @@ layout: default
     Array.prototype.forEach.call(elements, function(el, i){
         if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
     });
+
 </script>

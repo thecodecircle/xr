@@ -163,6 +163,9 @@ body{
     // margin-bottom: 2rem;
   }
 }
+.h-10vw{
+	height: 10vw;
+}
 .btn-black{
 	font-family: $almoni;
   // width: 50px;
@@ -355,6 +358,8 @@ a.text-pink:visited{
 }
 .square-image{
 	height: 30%;
+	// height: auto;
+	// width: 30%;
 	margin-bottom: 3vw;
 }
 a{
@@ -511,6 +516,7 @@ a{
 	}
 	.square-text{
 		font-size: 3vw;
+		line-height: 1;
 	}
 	.page-headers{
 		height: 75vh;
@@ -530,7 +536,7 @@ a{
 		height: 75vh;
 	}
 	.overlay{
-		padding-bottom: 5vh;
+		// padding-bottom: 5vh;
 	}
 	.hero{
 		// padding-bottom: 1rem;
