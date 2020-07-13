@@ -298,6 +298,9 @@ a:visited{
   right: 0;
 }
 
+a.text-pink:visited{
+	color: $pink;
+}
 .text-pink{
 	color: $pink;
 }
@@ -316,6 +319,12 @@ a:visited{
 .social-icons{
 	display: flex;
 	justify-content: center;
+
+  a{
+    width: 10%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
 }
 .third-section{
 	flex-direction: column;
@@ -361,7 +370,7 @@ a{
 	margin: 0 1rem 0 1rem;
 }
 .social-icon{
-	width: 10%;
+	width: 100%;
 }
 .mb-0{
 	margin-bottom: 0;
