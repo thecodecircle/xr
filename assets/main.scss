@@ -144,7 +144,9 @@ body{
   font-family: $alef
 }
 .about-title{
-  font-family: $almoni
+  font-family: $almoni;
+	margin-right: 30px;
+
 }
 .hero{
   background-color: lightblue;
@@ -187,6 +189,9 @@ body{
 }
 .text-lg{
   font-size: 2rem;
+}
+.text-xl{
+  font-size: 3rem;
 }
 .text-md{
   font-size: 1.5rem;
@@ -263,9 +268,11 @@ a:visited{
 }
 
 .square-margin{
-	width: 90%;
+	width: 100%;
 	background-color: white;
-	margin: 2rem;
+	margin-top: 2rem;
+	// margin-bottom: 2rem;
+	// margin: 2rem;
 }
 .square-blue{
 	background-color: #32439C;
@@ -315,11 +322,10 @@ a:visited{
 }
 .events-section{
 	background-color: #76C6DD;
-	text-align: center;
+	text-align: right;
 }
 .news-section{
 	background-color: $yellow;
-	text-align: center;
 }
 .flex-justify-between{
 	justify-content: space-between;
@@ -333,20 +339,23 @@ a:visited{
   justify-content: center;
 }
 .square-text{
-	font-size: 2.5rem;
+	font-size: 10vw;
 	margin-top: 1rem;
 	text-align:center;
 	color: white;
 }
 .square-image{
 	height: 30%;
-	margin-bottom: 3rem;
+	margin-bottom: 3vw;
 }
 a{
 	color: white;
 }
 .mx-30{
 		margin: 0 30px 0 30px
+}
+.mx-2rem{
+		margin: 0 2rem 0 2rem
 }
 .mx-1{
 	margin: 0 1rem 0 1rem;
@@ -411,6 +420,7 @@ a{
 .image-group{
 	display: none;
 }
+
 // only mobile
 @media only screen and (max-width: 600px) {
   .table-caption{
@@ -434,8 +444,11 @@ a{
     }
   }
 }
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 400px) {
+	.padding-hero{
+		padding-top: 25vw;
+		padding-bottom: 30vw;
+	}
 }
 @media only screen and (min-width: 1000px) {
 
@@ -481,7 +494,7 @@ a{
 		transform: translate(0, -10rem);
 	}
 	.square-text{
-		font-size: 2.5vw;
+		font-size: 3vw;
 	}
 	.page-headers{
 		height: 75vh;
@@ -552,6 +565,8 @@ a{
 		width: 50%;
 
 	}
+
+
 	.events-title{
 		text-align: right;
 	}
@@ -563,6 +578,9 @@ a{
 	}
 	.events-btn{
 		align-self: flex-end;
+	}
+	.square-image{
+		margin-bottom: 1vw;
 	}
 	// .basic-padding{
 	// 	padding: 0 5vw 0 5vw;

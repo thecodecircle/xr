@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
 <section class="hero  hero-bg ">
-<div class="overlay h-100v w-100 flex flex-align-center aflex-justify-center flex-column hero-h  ">
+<div class="overlay h-100v w-100 flex flex-align-center aflex-justify-center flex-column hero-h  padding-hero">
 
   <div class="hero-title mb-1 h-40 w-100 flex flex-align-center flex-justify-center">
     <div class="table-caption">
@@ -23,12 +23,12 @@ layout: default
 </div>
 </section>
 
-<div class="absolute w-50 left-50 ">
+<div class="absolute w-50 left-50">
   <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass">
 </div>
 
-<section class="about  w-100 text-center text-white font-bold pb-4  ">
-	<h2 class="about-title mt-5 text-secondary text-lg">
+<section class="about  w-100 text-white font-bold pb-4 ">
+	<h2 class="about-title mt-5 text-secondary text-xl">
 		מי אנחנו?
 	</h2>
 	<div class="about-content  flex flex-align-center flex-justify-center  text-md">
@@ -87,7 +87,7 @@ layout: default
 			</div>
 		</a>
 	</div>
-	<div class="square-margin">
+	<div class="square-margin mb-2">
 		<a class="square square-blue" href="{{site.baseurl}}act-now/">
 			<div class="flex flex-column flex-justify-center h-100 square-content">
 				<img src="assets/images/bee.svg" alt="bee" class="square-image">
@@ -101,14 +101,14 @@ layout: default
 </section>
 
 <section class="events-section pb-2 pt-1">
-	<h2 class="text-white events-title mx-30 text-lg">אירועים</h2>
+	<h2 class="text-white events-title mx-2rem text-lg">אירועים</h2>
 	<div class="events-contents">
 
   {% assign events_array = site.data.events | sort: 'date' %}
   {% assign event_num = events_array.size | minus: 4 %}
   {% for event in events_array %}
     {% if forloop.index > event_num %}
-    	<div class="event mx-30 mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
+    	<div class="event mx-2rem mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
         {% comment %}
         {% assign date_display = event.date | split: "-" | reverse %}
         {% assign date_display[2] = date_display[2] | slice: 2, 2 %}
@@ -121,11 +121,11 @@ layout: default
     {% endif %}
   {% endfor %}
 </div>
-	<a class="btn-black mb-2 events-btn" href="{{site.baseurl}}events/">לכל האירועים ></a>
+	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}events/">לכל האירועים ></a>
 </section>
 
 <section class="news-section pb-2 pt-1">
-	<h2 class="text-white news-title mx-30 text-lg">חדשות</h2>
+	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
   {% assign newses_array = site.posts | sort: 'date' %}
   {% if newses_array.size > 2 %}
     {% assign news_num = newses_array.size | minus: 2 %}
@@ -134,14 +134,14 @@ layout: default
   {% endif %}
   {% for news in newses_array %}
     {% if forloop.index <= news_num %}
-    	<div class="news mx-30 mt-1">
+    	<div class="news mx-2rem mt-1">
     		<h2 class="mb-0 text-lg">{{ news.title }}</h2>
     		<p class="text-sm">{{ news.subtitle }}</p>
     		<a class="btn-black mb-2" href="{{site.baseurl}}{{news.url}}">קראו עוד</a>
     	</div>
     {% endif %}
   {% endfor %}
-	<a class="btn-black mb-2" href="{{site.baseurl}}news/">לכל החדשות ></a>
+	<a class="btn-black mb-2 mx-2rem" href="{{site.baseurl}}news/">לכל החדשות ></a>
 </section>
 
 <section class="social-section mt-2">
