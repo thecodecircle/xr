@@ -1,22 +1,22 @@
 - title: הדרישות שלנו
   image: hourglass
   color: blue
-  action: .
+  link: demand
 
 - title: הערכים והעקרונות שלנו
   image: prayinghands
   color: blue
-  action: .
+  link: "#"
 
 - title: האסטרטגיה שלנו
   image: bee
   color: blue
-  action: .
+  link: "#"
 
 - title: כיצד להקים קבוצת זיקה?
   image: orchid
   color: blue
-  action: .
+  link: "#"
 
 - title: בקשו מימון לפעילות
   image: butterfly
@@ -25,19 +25,19 @@
 - title: חומרים גרפיים
   image: eye
   color: blue
-  action: .
+  link: "#"
 
 - title: מהי פעולה ישירה
   image: gazelle
   color: blue
-  action: .
+  link: "#"
 
 - title: הבריגדות האדומות
   image: bee
   color: blue
-  action: .
+  link: "#"
 
 - title: SOS
   image: tree
   color: blue
-  action: .
+  link: "#"
