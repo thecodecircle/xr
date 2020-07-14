@@ -44,18 +44,27 @@ layout: default
 			<p>
 				לכן, הצטרפנו למרד - אמהות, אבות, סבים וסבתות, נשים, גברים, זקנים ונוער, מכל גיל, רקע ומקצוע אפשריים.
 			</p>
-	      אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
-				<p>
+			<a class="about-btn btn-black read-more">
+				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-down">
+			</a>
+			<p class="mobile-hidden">
+				אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
+			</p>
+				<p class="mobile-hidden">
 					המשימה שלנו היא לעורר מרד יצירתי בלתי-אלים ולהניע 3.5% מהאוכלוסייה,
 				</p>
 	  </div>
-	  <div class="">
+	  <div class="mobile-hidden">
 			<p>
 				כדי לשבש את ה"עסקים כרגיל", עד שהממשלה תנקוט בפעולה אפקטיבית.
 			</p>
 			<p>
 				אנחנו מבססים את הדרישות שלנו על גוף-הידע המתפרסם על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
 			</p>
+			<br>
+			<a class="about-btn btn-black mobile-hidden read-less">
+				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-up">
+			</a>
 			<br>
 			<a class="about-btn btn-black" href="{{site.baseurl}}/crisis/">
 				{{ page.read-more }}
@@ -173,5 +182,14 @@ layout: default
     Array.prototype.forEach.call(elements, function(el, i){
         if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
     });
-
+		$(".read-more").click(function(event) {
+			$(this).hide()
+			$(".mobile-hidden").show("400")
+			$(".read-less").css('display', 'inline-block');
+		});
+		$(".read-less").click(function(event) {
+			$(this).hide()
+			$(".read-more").show("400")
+			$(".mobile-hidden").hide("400")
+		});
 </script>
