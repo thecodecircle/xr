@@ -22,7 +22,7 @@ order: 6
 	<div class="join-us-squares  flex flex-align-center flex-justify-center mx-2rem">
 		{% for square in site.data.join-us %}
 		<div class="square-margin">
-			<a class="square square-black" href="#">
+			<a class="square square-black" href="{{square.link}}">
 				<div class="flex flex-column flex-justify-center h-100 square-content">
 					<img src="{{site.baseurl}}/assets/images/{{square.icon}}.svg" alt="{{square.icon}}" class="square-image">
 					<div class="square-text">
