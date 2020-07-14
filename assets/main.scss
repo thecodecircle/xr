@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 @font-face {
   font-family: "Almoni";
-  src: url("fonts/Almoni-Neue-DL-4-AAA-Bold.ttf");
+  src: url("fonts/almoni-tzar-bold-aaa.otf");
 }
 @font-face {
   font-family: "Alef";
@@ -288,9 +288,18 @@ a:visited{
 	height: 50%;
 	padding-top: 100%;
 	position: relative;
-
+}
+.square:hover{
+	background-color: $lightblue;
+	// animation-name: color-change;
+	// animation-duration: 0.5s;
+	// transition: background-color 500ms  ease-in-out;
 }
 
+@keyframes color-change {
+from {}
+to {background-color: $lightblue;}
+}
 
 /* If you want text inside of the container */
 .square-content {
@@ -438,7 +447,9 @@ a{
 .image-group{
 	display: none;
 }
-
+.padding-hero{
+	padding-bottom: 5vw;
+}
 // only mobile
 @media only screen and (max-width: 600px) {
   .table-caption{
