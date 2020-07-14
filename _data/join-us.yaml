@@ -1,14 +1,14 @@
 - name: טוויטר
   icon: twitter
-  link:
+  link: https://twitter.com/israelrebellion
 
 - name: פייסבוק
   icon: facebook
-  link:
+  link: https://www.facebook.com/XRisrael/
 
 - name: איסטגרם
   icon: instagram
-  link:
+  link: https://www.instagram.com/extinctionrebellionisrael/
 
 - name: אינסטגרם הבריגדה האדומה
   icon: instagram
@@ -16,8 +16,8 @@
 
 - name: אתר XR העולמי
   icon: world
-  link:
+  link: https://rebellion.global/
 
 - name: אתר XR הבריטי
   icon: uk
-  link:
+  link: https://rebellion.earth/
