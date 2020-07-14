@@ -12,18 +12,19 @@ order: 3
 		</div>
 </div>
 </div>
-
-<div class="bg-lightblue events-events">
-	{% assign events_array = site.data.events | sort: 'date' %}
-	{% assign event_num = events_array.size | minus: 4 %}
-	{% for event in events_array %}
-		<div class="event mx-30" future-date="{{ event.date | date: '%Y-%m-%d' }}">
+<div class=" bg-lightblue w-100 pb-2">
+	<div class="events-events px-2">
+		{% assign events_array = site.data.events | sort: 'date' %}
+		{% assign event_num = events_array.size | minus: 4 %}
+		{% for event in events_array %}
+		<div class="event pb-2" future-date="{{ event.date | date: '%Y-%m-%d' }}">
 			<h2 class="text-white mb-0 text-lg">{{ event.date | split: "-" | reverse | join: "." }}</h2>
 			<h3 class="text-white mb-0 text-md">{{ event.title }}</h3>
-			<p class="text-sm">{{ event.description }}</p>
+			<p class="text-sm alef">{{ event.description }}</p>
 			<a class="btn-black mb-2" href="{{ event.link }}">להרשמה</a>
 		</div>
-	{% endfor %}
+		{% endfor %}
+	</div>
 </div>
 
 <script>
