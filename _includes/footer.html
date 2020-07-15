@@ -23,11 +23,12 @@
 		<ol class="text-white">
 			{% for page in site.pages %}
 				{% if page.title and page.path != "404.html" %}
-				<li>
-					{{ page.title }}
-					{% for section in page.sections %}
-					{{ section }}
-				</li>
+  				<li>
+  					{{ page.title }}
+  					{% for section in page.sections %}
+    					{{ section }}
+            {% endfor %}
+  				</li>
 				{% endif %}
 			{% endfor %}
 		</ol>
