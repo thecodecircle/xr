@@ -2,7 +2,7 @@
 layout: default
 title: מי אנחנו
 permalink: /about/
-order: 5
+order: 2
 ---
 
 
@@ -12,7 +12,7 @@ order: 5
 	</div>
 </div>
 
-<div class="bg-green about-page-content  flex flex-align-center flex-justify-center  text-md text-white">
+<div class="bg-green about-page-content  flex flex-align-center flex-justify-center text-white alef">
 	<div class="">
 		<p class="">
 			<span class="text-secondary">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-secondary">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
@@ -54,57 +54,81 @@ order: 5
 	</div>
 </div>
 
-<div class="demands contents" id="demands">
-	<div class="demands-title text-lg pb-2">
+<div class="demands contents desktop-padding" id="demands">
+	<h2 class="demands-title  pb-2">
 		הדרישות שלנו
+	</h2>
+	<div class="demands-div">
+		{% for demand in site.data.demands %}
+			<div class="pb-2 demand-div">
+				<h2 class="demand-title text-green">{{ forloop.index }}. {{ demand.title }}</h2>
+				<p class="demand alef font-bold">
+					{{ demand.content }}
+				</p>
+			</div>
+		{% endfor %}
 	</div>
-	{% for demand in site.data.demands %}
-		<div class="pb-2">
-			<h2 class="demand-title text-green">{{ forloop.index }}. {{ demand.title }}</h2>
-			<p class="demand alef font-bold">
-				{{ demand.content }}
-			</p>
-		</div>
-	{% endfor %}
-
-	<a href="#" class="btn-black">להורדת מסמך הדרישות שלנו ></a>
+	<div class="">
+		<a href="#" class="btn-black demands-btn">להורדת מסמך הדרישות שלנו ></a>
+	</div>
 </div>
 
-<div class="values bg-lightblue contents" id="values">
-	<h2 class="values-title">
+<div class="values bg-lightblue contents desktop-padding" id="values">
+	<h2 class="values-title pb-2 ">
 		הערכים והעקרונות שלנו
 	</h2>
-
-	{% for value in site.data.values %}
-		<div class="pb-2">
-			<h2 class="value-title text-white">{{ forloop.index }}. {{ value.title }}</h2>
-			<p class="value alef font-bold">
-				{{ value.content }}
-			</p>
+	<div class="values-flex ">
+		<div class="value-list">
+			{% for value in site.data.values %}
+				{% if forloop.index < 6 %}
+					<div class="pb-2">
+						<h2 class="value-title text-white">{{ forloop.index }}. {{ value.title }}</h2>
+						<p class="value alef font-bold">
+							{{ value.content }}
+						</p>
+					</div>
+				{% endif %}
+			{% endfor %}
 		</div>
-	{% endfor %}
-	<a href="#" class="btn-black">להורדת מסמך הערכים והעקרונות שלנו ></a>
+		<div class="value-list">
+			{% for value in site.data.values %}
+				{% if forloop.index > 5 %}
+					<div class="pb-2">
+						<h2 class="value-title text-white">{{ forloop.index }}. {{ value.title }}</h2>
+						<p class="value alef font-bold">
+							{{ value.content }}
+						</p>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	<a href="#" class="btn-black ">להורדת מסמך הערכים והעקרונות שלנו ></a>
 </div>
-<div class="strategy contents bg-green" id="strategy">
+<div class="strategy contents bg-green desktop-padding" id="strategy">
 		<h2 class="strategy-title">האסטרטגיה שלנו</h2>
 
 </div>
-<div class="structure contents">
+<div class="structure contents desktop-padding">
 	<h2 class="structure-title">מידע על מבנה התנועה</h2>
-	<div class="alef font-bold">
-		<p>
-			תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום.
-			ישראל נמצאת במצב פגיע במיוחד …
-		</p>
-		<p>
-			הממשלה נכשלת בתפקידה לדאוג לאזרחי המדינה ולתקשר לציבור את חומרת המצב.
-			לכן, הצטרפנו למרד - אמהות, אבות, סבים וסבתות, נשים, גברים, זקנים ונוער, מכל גיל, רקע ומקצוע אפשריים.
-			אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
-		</p>
-	</div>
-	<!-- <a href="{{site.baseurl}}/assets/images/structure.svg" data-lightbox="strucure" data-title="מבנה התנועה" class="bg-green">
-	</a> -->
-		<img src="{{site.baseurl}}/assets/images/structure.svg" alt="movement-structure" class="structure-image mb-1">
+		<div class="structure-flex">
+			<div class="alef font-bold structure-text">
+				<p>
+					תנועת "המרד בהכחדה" (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה למצב החירום חסר התקדים שבו אנו נמצאים - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום.
+					ישראל נמצאת במצב פגיע במיוחד …
+				</p>
+				<p>
+					הממשלה נכשלת בתפקידה לדאוג לאזרחי המדינה ולתקשר לציבור את חומרת המצב.
+					לכן, הצטרפנו למרד - אמהות, אבות, סבים וסבתות, נשים, גברים, זקנים ונוער, מכל גיל, רקע ומקצוע אפשריים.
+					אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
+				</p>
+			</div>
+			<!-- <a href="{{site.baseurl}}/assets/images/structure.svg" data-lightbox="strucure" data-title="מבנה התנועה" class="bg-green">
+			</a> -->
+			<div class="">
+				<img src="{{site.baseurl}}/assets/images/structure.svg" alt="movement-structure" class="structure-image mb-1">
+			</div>
+		</div>
 		<a href="#" class="btn-black mb-1">קראו עוד ></a>
 		<a href="#" class="btn-black btn-pink mb-1">הצטרפו אלינו</a>
 </div>

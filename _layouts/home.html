@@ -27,11 +27,11 @@ layout: default
   <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass">
 </div>
 
-<section class="about  w-100 text-white font-bold pb-4 ">
-	<h2 class="about-title mt-5 text-secondary text-xl px-2">
+<section class="about text-white font-bold pb-4 desktop-padding ">
+	<h2 class="about-title mt-5 text-secondary text-xl">
 		מי אנחנו?
 	</h2>
-	<div class="about-content  flex flex-align-center flex-justify-center  text-md">
+	<div class="about-content  flex flex-align-center flex-justify-between  text-md">
 	  <div class="">
 			<p>
 			<span class="text-secondary">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-secondary">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
@@ -47,14 +47,14 @@ layout: default
 			<a class="about-btn btn-black read-more">
 				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-down">
 			</a>
-			<p class="mobile-hidden">
+			<p class="mobile-hidden mobile-read-more">
 				אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
 			</p>
-				<p class="mobile-hidden">
+				<p class="mobile-hidden mobile-read-more">
 					המשימה שלנו היא לעורר מרד יצירתי בלתי-אלים ולהניע 3.5% מהאוכלוסייה,
 				</p>
 	  </div>
-	  <div class="mobile-hidden">
+	  <div class="mobile-hidden mobile-read-more">
 			<p>
 				כדי לשבש את ה"עסקים כרגיל", עד שהממשלה תנקוט בפעולה אפקטיבית.
 			</p>
@@ -62,7 +62,7 @@ layout: default
 				אנחנו מבססים את הדרישות שלנו על גוף-הידע המתפרסם על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
 			</p>
 			<br>
-			<a class="about-btn btn-black mobile-hidden read-less">
+			<a class="about-btn btn-black mobile-hidden mobile-read-more read-less">
 				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-up">
 			</a>
 			<br>
@@ -75,7 +75,7 @@ layout: default
 
 <img src="assets/images/group.png" alt="illustration group" class="image-group">
 
-<section class="third-section flex flex-align-center flex-justify-center px-2">
+<section class="third-section flex flex-align-center flex-justify-between px-2 desktop-padding">
 	<div class="square-margin">
 		<a class="square square-blue" href="{{site.baseurl}}/act-now/">
 			<div class="flex flex-column flex-justify-center h-100 square-content">
@@ -109,15 +109,15 @@ layout: default
 
 </section>
 
-<section class="events-section pb-2 pt-1">
-	<h2 class="text-white events-title mx-2rem text-lg">אירועים</h2>
+<section class="events-section pb-2 pt-1 desktop-padding">
+	<h2 class="text-white events-title mobile-mx-2rem text-lg ">אירועים</h2>
 	<div class="events-contents">
 
   {% assign events_array = site.data.events | sort: 'date' %}
   {% assign event_num = events_array.size | minus: 4 %}
   {% for event in events_array %}
     {% if forloop.index > event_num %}
-    	<div class="event mx-2rem mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
+    	<div class="event mobile-mx-2rem mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
         {% comment %}
         {% assign date_display = event.date | split: "-" | reverse %}
         {% assign date_display[2] = date_display[2] | slice: 2, 2 %}
@@ -133,7 +133,7 @@ layout: default
 	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}/events/">לכל האירועים ></a>
 </section>
 
-<section class="news-section pb-2 pt-1">
+<section class="news-section pb-2 pt-1 desktop-padding">
 	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
   {% assign newses_array = site.posts | sort: 'date' %}
   {% if newses_array.size > 2 %}
@@ -153,13 +153,18 @@ layout: default
 	<a class="btn-black mb-2 mx-2rem" href="{{site.baseurl}}/news/">לכל החדשות ></a>
 </section>
 
-<section class="social-section mt-2">
+<section class="social-section">
+  <div class="xr-online text-md text-center">
+    המרד ברשת
+  </div>
 	<div class="social-icons">
-		<a href="https://www.facebook.com/XRisrael/"> <img src="assets/images/facebook-pink.svg" alt="facebook" class="mx-1 social-icon"> </a>
-		<a href="https://www.instagram.com/extinctionrebellionisrael/"> <img src="assets/images/instagram-pink.svg" alt="instagram" class="mx-1 social-icon"> </a>
-		<a href="https://twitter.com/israelrebellion"> <img src="assets/images/twitter-pink.svg" alt="twitter" class="mx-1 social-icon"> </a>
+		<a href="https://www.facebook.com/XRisrael/"> <img src="assets/images/facebook-pink.svg" alt="facebook" class="social-icon"> </a>
+		<a href="https://www.instagram.com/extinctionrebellionisrael/"> <img src="assets/images/instagram-pink.svg" alt="instagram" class="social-icon"> </a>
+		<a href="https://twitter.com/israelrebellion"> <img src="assets/images/twitter-pink.svg" alt="twitter" class="social-icon"> </a>
+		<a href="https://twitter.com/israelrebellion"> <img src="assets/images/telegram-pink.svg" alt="twitter" class="social-icon"> </a>
+		<a href="https://twitter.com/israelrebellion"> <img src="assets/images/youtube-pink.svg" alt="twitter" class="social-icon"> </a>
 	</div>
-	<div class="global-site text-center text-lg">
+	<div class="global-site text-center text-md">
 		<a class="text-pink" href="https://rebellion.global/">
 			לאתר המרד העולמי >
 		</a>
@@ -167,6 +172,7 @@ layout: default
 </section>
   {{ content }}
 </div>
+
 
 <script>
     function getCompareDate() {
@@ -184,12 +190,12 @@ layout: default
     });
 		$(".read-more").click(function(event) {
 			$(this).hide()
-			$(".mobile-hidden").show("400")
+			$(".mobile-read-more").show("400")
 			$(".read-less").css('display', 'inline-block');
 		});
 		$(".read-less").click(function(event) {
 			$(this).hide()
 			$(".read-more").show("400")
-			$(".mobile-hidden").hide("400")
+			$(".mobile-read-more").hide("400")
 		});
 </script>
