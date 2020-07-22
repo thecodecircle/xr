@@ -23,6 +23,7 @@
   .site-nav{
     .page-link{
       color: white;
+			// text-underline-position: under;
         &:last-child {
           margin-right: 20px;
         }
@@ -327,5 +328,14 @@
 			justify-content: center;
 			align-items: center;
 		}
+	}
+	.join-us-squares{
+		.square-margin{
+			margin: 2rem;
+		}
+	}
+	.current-page{
+		text-decoration: underline;
+		text-underline-position: under;
 	}
 }
