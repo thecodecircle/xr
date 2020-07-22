@@ -3,6 +3,7 @@ layout: default
 title: פעלו עכשיו
 permalink: /act-now/
 order: 5
+footer: act-now
 ---
 <div class=" bg-act-now  page-headers">
 	<div class="overlay page-overlay flex flex-align-center flex-justify-center flex-column ">
@@ -13,7 +14,7 @@ order: 5
 </div>
 
 <div class="bg-yellow">
-	<div class="act-now-move-up  act-now-squares  flex flex-align-center flex-justify-center  mx-2rem">
+	<div class="act-now-move-up  act-now-squares  flex flex-align-center flex-justify-center  mx-2rem basic-padding">
 		{% for square in site.data.act-now %}
 		<div class="square-margin margin">
 			<a class="square square-{{square.color}}" href="{{site.baseurl}}/about{{square.link}}">

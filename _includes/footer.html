@@ -1,20 +1,39 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+{% if page.footer %}
+	<div class="footer-image mobile-hidden text-white" style="background-image:url('{{site.baseurl}}/assets/images/footer-{{page.footer}}.webp')">
+		<div class="overlay page-overlay">
+			הצטרפו אלינו
+		</div>
+	</div>
+{% endif %}
+<footer class="site-footer h-card basic-padding">
+	<a class="btn-black btn-yellow donate-btn text-center text-md mb-2 desktop-hidden"  href="#">תרמו לנו</a>
 
-  <div class="wrapper">
 
-		<ol class="text-white">
-			{% for page in site.pages %}
-				{% if page.title and page.path != "404.html" %}
-  				<li>
-  					{{ page.title }}
-  					{% for section in page.sections %}
-    					{{ section }}
-            {% endfor %}
-  				</li>
+		<div class="text-white">
+			{% assign sorted_pages = site.pages | sort: "order" %}
+			{% for page in sorted_pages %}
+				{% if page.title  and (page.path != "404.html" and page.title != "הצטרפו אלינו") %}
+  				<div>
+  					<a class="text-md" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+						<ul>
+							{% for section in page.sections %}
+							<li>
+								<a class="text-yellow alef" href="{{ page.url | relative_url }}#{{section[0]}}">{{ section[1] }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+  				</div>
 				{% endif %}
 			{% endfor %}
-		</ol>
-  </div>
+		</div>
 
+	<div class="footer-left">
+		<a class="btn-black btn-yellow donate-btn text-center text-md mb-2 mobile-hidden"  href="#">תרמו לנו</a>
+		<img src="{{site.baseurl}}/assets/images/logo.svg" alt="xr-il-logo" class="slogo-height mt-2"></a>
+		<h2 class="text-white ltr copyright-title">COPYRIGHT INFO</h2>
+		<hr>
+		<div class="text-white ltr mt-1 copyright-content">
+			Extinction Rebellion (XR) is a do-it-together movement. All our design and artwork can be used non-commercially for the purpose of planet saving. This does not mean creating merchandise for fundraising or sending XR a percentage of your sales. We do not endorse or create any merchandise and we will pursue and prosecute anyone who does. The Extinction Symbol was designed in 2011 by street artist ESP, who loans XR usage on the same basis: www.extinctionsymbol.info.
+		</div>
+	</div>
 </footer>

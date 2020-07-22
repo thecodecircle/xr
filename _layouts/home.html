@@ -27,14 +27,14 @@ layout: default
   <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass">
 </div>
 
-<section class="about text-white font-bold pb-4 desktop-padding ">
-	<h2 class="about-title mt-5 text-secondary text-xl">
+<section class="about text-white font-bold pb-4 basic-padding ">
+	<h2 class="about-title mt-5 text-yellow text-xl">
 		מי אנחנו?
 	</h2>
 	<div class="about-content  flex flex-align-center flex-justify-between  text-md">
 	  <div class="">
 			<p>
-			<span class="text-secondary">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-secondary">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
+			<span class="text-yellow">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-yellow">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
 			</p>
 			<p>
 				הממשלה נכשלת בתפקידה לדאוג לאזרחי המדינה ולתקשר לציבור את חומרת המצב.
@@ -75,7 +75,7 @@ layout: default
 
 <img src="assets/images/group.png" alt="illustration group" class="image-group">
 
-<section class="third-section flex flex-align-center flex-justify-between px-2 desktop-padding">
+<section class="third-section flex flex-align-center flex-justify-between px-2 basic-padding">
 	<div class="square-margin">
 		<a class="square square-blue" href="{{site.baseurl}}/act-now/">
 			<div class="flex flex-column flex-justify-center h-100 square-content">
@@ -109,15 +109,15 @@ layout: default
 
 </section>
 
-<section class="events-section pb-2 pt-1 desktop-padding">
-	<h2 class="text-white events-title mobile-mx-2rem text-lg ">אירועים</h2>
+<section class="events-section pb-2 pt-1 basic-padding">
+	<h2 class="text-white events-title mobile-mx-2rema text-lg ">אירועים</h2>
 	<div class="events-contents">
 
   {% assign events_array = site.data.events | sort: 'date' %}
   {% assign event_num = events_array.size | minus: 4 %}
   {% for event in events_array %}
     {% if forloop.index > event_num %}
-    	<div class="event mobile-mx-2rem mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
+    	<div class="event mobile-mx-2rema mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
         {% comment %}
         {% assign date_display = event.date | split: "-" | reverse %}
         {% assign date_display[2] = date_display[2] | slice: 2, 2 %}
@@ -133,7 +133,7 @@ layout: default
 	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}/events/">לכל האירועים ></a>
 </section>
 
-<section class="news-section pb-2 pt-1 desktop-padding">
+<section class="news-section pb-2 pt-1 basic-padding">
 	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
   {% assign newses_array = site.posts | sort: 'date' %}
   {% if newses_array.size > 2 %}
