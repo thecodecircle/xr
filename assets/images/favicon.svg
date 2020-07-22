@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="67.565117"
-   height="67"
-   viewBox="0 0 67.565117 67"
+   width="69.565117"
+   height="69"
+   viewBox="0 0 69.565117 69"
    version="1.1"
    id="svg8"
    sodipodi:docname="favicon.svg"
@@ -44,23 +44,23 @@
      inkscape:window-height="1029"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="2.0160428"
-     inkscape:cx="-112.49058"
-     inkscape:cy="33.5"
+     inkscape:zoom="2.8511151"
+     inkscape:cx="-117.42425"
+     inkscape:cy="20.954967"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="Top_menu"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1" />
   <title
      id="title2">Logo_mask copy@3x</title>
   <g
      id="Symbols"
      style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
-     transform="translate(-119.43488)">
+     transform="translate(-118.43488,1)">
     <g
        id="Top_menu"
        transform="translate(-1168,-15)"
@@ -69,12 +69,14 @@
          id="Logo_mask-copy"
          transform="translate(1168,15)"
          inkscape:export-xdpi="100.29851"
-         inkscape:export-ydpi="100.29851">
+         inkscape:export-ydpi="100.29851"
+         style="fill:#000000;fill-opacity:1">
         <path
            d="M 187,33.499675 C 187,14.997461 171.87429,0 153.21548,0 134.55797,0 119.43292,14.99811 119.43488,33.499675 119.43292,51.999942 134.55797,67 153.21548,67 171.87822,67 187,51.999942 187,33.499675 m -33.78452,28.342533 c -7.15723,0 -13.69243,-2.617202 -18.71055,-6.928997 h 0.38435 1.62905 32.82399 2.20459 0.38369 c -5.01418,4.311795 -11.55528,6.928997 -18.71512,6.928997 m 0,-24.193055 10.59932,12.086788 h -21.19144 z m 0,-8.305448 -10.59016,-12.080945 h 21.18293 z M 132.48237,14.002132 149.5763,33.496429 132.48237,52.993972 c -4.85835,-5.080528 -7.84604,-11.939404 -7.84604,-19.494297 0,-7.556191 2.98834,-14.416365 7.84604,-19.497543 m 20.73311,-8.8423925 c 7.15984,0 13.70094,2.6133071 18.71512,6.9257505 h -3.58352 v 0.0019 h -30.25797 v -0.0019 h -3.58418 c 5.01812,-4.3124434 11.55397,-6.9257505 18.71055,-6.9257505 m 28.58438,28.3399355 c 0,7.554893 -2.98769,14.413769 -7.84866,19.494297 l -17.09196,-19.497543 17.09,-19.494297 c 4.86228,5.081178 7.85062,11.941352 7.85062,19.497543"
            id="SVGID_1_"
            inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cscsccccccccccccccccccccscccccccccccccc" />
+           sodipodi:nodetypes="cscsccccccccccccccccccccscccccccccccccc"
+           style="fill:#000000;fill-opacity:1" />
       </g>
     </g>
   </g>
