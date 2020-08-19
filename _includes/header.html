@@ -21,7 +21,7 @@
         {%- for path in sorted_pages -%}
 	        {%- assign my_page = site.pages | where: "path", path.path | first -%}
 
-	        {%- if my_page.title and (my_page.path != "404.html" and my_page.title != "הצטרפו אלינו") -%}
+	        {%- if my_page.title and (my_page.path != "404.html" and my_page.title != "הצטרפו אלינו" and my_page.title != "חדשות" and my_page.title != "אירועים") -%}
 						{%- if my_page.title == page.title -%}
 	        		<a class="page-link current-pagea" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
 						{%- else -%}
@@ -29,12 +29,12 @@
 		        {%- endif -%}
 	        {%- endif -%}
         {%- endfor -%}
-        <a class="page-link desktop-hidden" href="#">תרמו לנו</a>
+        <a class="page-link desktop-hidden" href="https://www.drove.com/campaign/5d1c920428df5500012295bd">תרמו לנו</a>
       </div>
     </nav>
   </div>
   <div class="donate-join-desktop">
-    <a class="page-link" href="#">תרמו לנו</a>
+    <a class="page-link" href="https://www.drove.com/campaign/5d1c920428df5500012295bd">תרמו לנו</a>
     <a class="page-link btn-black btn-yellow" href="{{site.baseurl}}/join-us/">הצטרפו אלינו</a>
   </div>
 </header>

@@ -111,7 +111,9 @@ layout: default
 
 <section class="events-section pb-2 pt-1 basic-padding">
 	<h2 class="text-white events-title mobile-mx-2rema text-lg ">אירועים</h2>
-	<div class="events-contents">
+	<div data-tockify-component="calendar" data-tockify-calendar="xrisdiary"></div>
+	<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+	<!-- <div class="events-contents">
 
   {% assign events_array = site.data.events | sort: 'date' %}
   {% assign event_num = events_array.size | minus: 4 %}
@@ -130,12 +132,13 @@ layout: default
     {% endif %}
   {% endfor %}
 </div>
-	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}/events/">לכל האירועים ></a>
+	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}/events/">לכל האירועים ></a> -->
 </section>
 
 <section class="news-section pb-2 pt-1 basic-padding">
 	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
-  {% assign newses_array = site.posts | sort: 'date' %}
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fxrisrael&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187293865204" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <!-- {% assign newses_array = site.posts | sort: 'date' %}
   {% if newses_array.size > 2 %}
     {% assign news_num = newses_array.size | minus: 2 %}
   {% else %}
@@ -150,7 +153,7 @@ layout: default
     	</div>
     {% endif %}
   {% endfor %}
-	<a class="btn-black mb-2 mx-2rem" href="{{site.baseurl}}/news/">לכל החדשות ></a>
+	<a class="btn-black mb-2 mx-2rem" href="{{site.baseurl}}/news/">לכל החדשות ></a> -->
 </section>
 
 <section class="social-section">

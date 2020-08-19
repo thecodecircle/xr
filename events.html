@@ -13,8 +13,10 @@ footer: events
 		</div>
 </div>
 </div>
-<div class=" bg-lightblue w-100 pb-2">
-	<div class="events-events basic-padding">
+<div class=" bg-lightbdlue w-100 pb-2">
+	<div data-tockify-component="calendar" data-tockify-calendar="xrisdiary"></div>
+	<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+	<!-- <div class="events-events basic-padding">
 		{% assign events_array = site.data.events | sort: 'date' %}
 		{% assign event_num = events_array.size | minus: 4 %}
 		{% for event in events_array %}
@@ -25,7 +27,7 @@ footer: events
 			<a class="btn-black mb-2" href="{{ event.link }}">להרשמה</a>
 		</div>
 		{% endfor %}
-	</div>
+	</div> -->
 </div>
 
 <script>
