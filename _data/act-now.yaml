@@ -1,19 +1,19 @@
-- title: הדרישות שלנו
+- title: קבוצות זיקה
   image: hourglass
   color: blue
-  link: "#demands"
+  link: "#"
 
-- title: הערכים והעקרונות שלנו
+- title: פעולה ישירה
   image: prayinghands
   color: blue
-  link: "#values"
+  link: "#"
 
-- title: האסטרטגיה שלנו
+- title: מערכת התארגנות עצמית (SOS)
   image: bee
   color: blue
-  link: "#strategy"
+  link: "#"
 
-- title: כיצד להקים קבוצת זיקה?
+- title: תרבות מתחדשת
   image: orchid
   color: blue
   link: "#"
@@ -23,22 +23,22 @@
   color: pink
   link: "https://www.drove.com/campaign/5d1c920428df5500012295bd"
 
-- title: חומרים גרפיים
+- title: מידע משפטי
   image: eye
   color: blue
   link: "#"
 
-- title: מהי פעולה ישירה
+- title: בקרוב...
   image: gazelle
   color: blue
   link: "#"
 
-- title: הבריגדות האדומות
+- title: חומרים גרפיים
   image: bee
   color: blue
   link: "#"
 
-- title: SOS
+- title: בקרוב...
   image: tree
   color: blue
   link: "#"

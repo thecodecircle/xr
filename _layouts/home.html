@@ -31,7 +31,7 @@ layout: default
 	<h2 class="about-title mt-5 text-yellow text-xl">
 		מי אנחנו?
 	</h2>
-	<div class="about-content  flex flex-align-center flex-justify-between  text-md">
+	<div class="about-content flex flex-align-center flex-justify-between  text-md">
 	  <div class="">
 			<p>
 			<span class="text-yellow">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-yellow">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
@@ -59,7 +59,7 @@ layout: default
 				כדי לשבש את ה"עסקים כרגיל", עד שהממשלה תנקוט בפעולה אפקטיבית.
 			</p>
 			<p>
-				אנחנו מבססים את הדרישות שלנו על גוף-הידע המתפרסם על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
+				אנחנו מבססים את הדרישות שלנו על הקונצנזוס המדעי בנושא ועל הנתונים המתפרסמים על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
 			</p>
 			<br>
 			<a class="about-btn btn-black mobile-hidden mobile-read-more read-less">
@@ -113,47 +113,14 @@ layout: default
 	<h2 class="text-white events-title mobile-mx-2rema text-lg ">אירועים</h2>
 	<div data-tockify-component="calendar" data-tockify-calendar="xrisdiary"></div>
 	<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-	<!-- <div class="events-contents">
-
-  {% assign events_array = site.data.events | sort: 'date' %}
-  {% assign event_num = events_array.size | minus: 4 %}
-  {% for event in events_array %}
-    {% if forloop.index > event_num %}
-    	<div class="event mobile-mx-2rema mt-1" future-date="{{ event.date | date: '%Y-%m-%d' }}">
-        {% comment %}
-        {% assign date_display = event.date | split: "-" | reverse %}
-        {% assign date_display[2] = date_display[2] | slice: 2, 2 %}
-        {% endcomment %}
-    		<h2 class="text-white mb-0 text-lg">{{ event.date | split: "-" | reverse | join: "." }}</h2>
-    		<h3 class="text-white mb-0 text-md">{{ event.title }}</h3>
-    		<p class="text-sm">{{ event.description }}</p>
-    		<a class="btn-black mb-2" href={{ event.link }}>להרשמה</a>
-    	</div>
-    {% endif %}
-  {% endfor %}
-</div>
-	<a class="btn-black mb-2 events-btn mx-2rem" href="{{site.baseurl}}/events/">לכל האירועים ></a> -->
 </section>
 
 <section class="news-section pb-2 pt-1 basic-padding">
 	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
-  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fxrisrael&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187293865204" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-  <!-- {% assign newses_array = site.posts | sort: 'date' %}
-  {% if newses_array.size > 2 %}
-    {% assign news_num = newses_array.size | minus: 2 %}
-  {% else %}
-    {% assign news_num = newses_array.size %}
-  {% endif %}
-  {% for news in newses_array %}
-    {% if forloop.index <= news_num %}
-    	<div class="news mx-2rem mt-1">
-    		<h2 class="mb-0 text-lg">{{ news.title }}</h2>
-    		<p class="text-sm">{{ news.subtitle }}</p>
-    		<a class="btn-black mb-2" href="{{site.baseurl}}/{{news.url}}">קראו עוד</a>
-    	</div>
-    {% endif %}
-  {% endfor %}
-	<a class="btn-black mb-2 mx-2rem" href="{{site.baseurl}}/news/">לכל החדשות ></a> -->
+  <div class="news-flex">
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXRisrael%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187293865204" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="mobile-hidden"></iframe>
+    <a class="twitter-timeline" data-lang="he" data-width="500" data-height="700" data-dnt="true" href="https://twitter.com/IsraelRebellion?ref_src=twsrc%5Etfw">Tweets by IsraelRebellion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 </section>
 
 <section class="social-section">

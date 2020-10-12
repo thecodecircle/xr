@@ -12,23 +12,23 @@
 		<div class="text-white">
 			{% assign sorted_pages = site.pages | sort: "order" %}
 			{% for page in sorted_pages %}
-				{% if page.title  and (page.path != "404.html" and page.title != "הצטרפו אלינו") %}
+				{% if page.title  and (page.path != "404.html" and page.title != "הצטרפו אלינו" and page.title != "אירועים" and page.title != "חדשות") %}
   				<div>
   					<a class="text-md" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-						<ul>
+						<!-- <ul>
 							{% for section in page.sections %}
 							<li>
 								<a class="text-yellow alef" href="{{ page.url | relative_url }}#{{section[0]}}">{{ section[1] }}</a>
 							</li>
 							{% endfor %}
-						</ul>
+						</ul> -->
   				</div>
 				{% endif %}
 			{% endfor %}
+			<a class="btn-black btn-yellow donate-btn text-center text-xl mt-2 p-4 w-full mobile-hidden"  href="https://www.drove.com/campaign/5d1c920428df5500012295bd">תרמו לנו</a>
 		</div>
 
 	<div class="footer-left">
-		<a class="btn-black btn-yellow donate-btn text-center text-md mb-2 mobile-hidden"  href="https://www.drove.com/campaign/5d1c920428df5500012295bd">תרמו לנו</a>
 		<img src="{{site.baseurl}}/assets/images/logo.svg" alt="xr-il-logo" class="slogo-height mt-2"></a>
 		<h2 class="text-white copyright-title">זכויות יוצרים</h2>
 		<hr>

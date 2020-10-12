@@ -58,7 +58,7 @@
 			justify-content: space-around;
 	}
 	.join-us-telegram{
-		width: 30%;
+		margin-left: 50vw;
 		margin-right: 5rem;
 	}
 	.hero-h{
@@ -290,15 +290,17 @@
   }
   .structure-image{
     display: block;
+		width: 80%;
+		float: left;
   }
   .structure-flex{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    // align-items: flex-start;
     justify-content: space-between;
   }
   .structure-text{
-    width: 23vw;
+    width: 120%;
   }
 	.site-footer{
 		flex-direction: row;
@@ -337,5 +339,9 @@
 	.current-page{
 		text-decoration: underline;
 		text-underline-position: under;
+	}
+	.news-flex {
+		display: flex;
+		justify-content: space-between;
 	}
 }
