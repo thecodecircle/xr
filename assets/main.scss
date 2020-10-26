@@ -590,4 +590,27 @@ a.page-link:hover{
 .codecircle{
   font-size: 1.5rem;
 }
+
+.crisis{
+  background-color: #f5f5f5;
+  padding: 0 20vw;
+  font-size: 1.2rem;
+  font-family: "Alef";
+  p{
+    white-space: pre-line;
+  }
+  a{
+    color: blue;
+  }
+  h1,h2,h3{
+    font-family: "Almoni"
+  }
+  h2::after{
+    content: " >"
+  }
+  div{
+    display: none;
+  }
+}
+
 @import "desktop";
