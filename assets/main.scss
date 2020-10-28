@@ -603,10 +603,17 @@ a.page-link:hover{
     color: blue;
   }
   h1,h2,h3{
-    font-family: "Almoni"
+    font-family: "Almoni";
+    span{
+      display: inline-block;
+    }
+    span.clicked{
+      transform: rotate(270deg);
+    }
   }
-  h2::after{
-    content: " >"
+  h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
   }
   div{
     display: none;
