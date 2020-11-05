@@ -28,15 +28,15 @@
   color: blue
   link: "https://drive.google.com/drive/folders/1zq5-OpaWnzZPWtYYOCOlLIISeWKkogRB?usp=sharing"
 
-- title: בקרוב...
-  image: gazelle
-  color: blue
-  link: "#"
-
 - title: חומרים גרפיים
   image: bee
   color: blue
   link: "https://drive.google.com/drive/folders/1pWY1pTA6ohipfAaBLNkainc0oc5QkY-q?usp=sharing"
+
+- title: בקרוב...
+  image: gazelle
+  color: blue
+  link: "#"
 
 - title: בקרוב...
   image: tree
