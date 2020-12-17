@@ -1,0 +1,54 @@
+---
+layout: default
+permalink: /iamrebel/
+---
+<script src="/assets/javascript/util.js"></script>
+<div class="iamrebel">
+  <h3>"אם הסכמת עם כל עקרונות המרד - הנך במרד"</h3>
+  <h2>כלי עזר לשימושכם</h2>
+  <p>
+  <ul>
+    <li>אל תפרסמו את השם המלא, מספר הטלפון (וואטסאפ), או ת"ז שלכם ברבים</li>
+    <li>השתמשו בסיסמה שונה בכל מקום, כדאי בעזרת נוסחה או תוכנת עזר</li>
+    <li>היעזרו אחד בשני, בצוותים הייעודיים ובמומחים</li>
+  </ul>
+  </p>
+
+  <h2>קישורים שמישים</h2>
+  <p class="links">
+    <span class="iframelink btn-black"
+      data-xor="%D6%B6%D6%9C%D6%A7P%D6%AF%D7%A4%D7%8D%D7%B0D%D6%BB%D6%B4%D6%AA%D7%B7%D6%BA%D6%B1%D6%87%D6%B4L%D6%B9%D7%B0%D6%81%D6%B0M%D7%BB%D6%A7%D6%AB%D6%BC%D6%AE%D6%BB%D6%86%D6%A7A%D6%A8%D6%B7%D6%8D%D6%B1%0F%D6%B0%D7%B8%D6%BC%D7%B6%D7%AF%D6%8E%D6%A9%D6%90x%D7%B1%D7%AF%D6%94%D6%8Bv%D6%A5%D6%8F%D6%8B%D6%96%D6%AF%D6%84%D6%B1%D6%87v%D6%8F%D6%A8%D6%A8%D6%86n%D6%86%D6%BC%D6%B6%D6%AE%D6%A5%D6%B7%D6%A3%D6%B6k%D6%9F%D7%AD%D6%B8%D6%9AW%D6%B6%D6%AE%D7%A9%D6%8B%D6%9F%D6%95%D6%AD%D6%92%0D%D6%B5%D6%8A%D6%B5%D6%B0b%D7%A1%D6%87%D7%AD%D6%AA%D6%87%D6%89%D6%B8%D6%B9u%D6%B6%D6%B3%D6%BA%D6%89m%D7%AD%D6%B1%D6%92%D7%AD%D6%82%D6%84%D6%92%D6%BE%10%D6%95%D6%B4%D7%90%D7%B2O%D6%B9%D6%B6%D7%A9%D7%A0%D6%90%D6%8D%D7%87%D6%B6M%D6%BE%D6%BB%D6%86%D7%A0D%D6%B1%D6%BB%D6%B8%D6%A0%D6%B0%D6%AD%D7%95%D7%A3%06%D6%AE%D6%B3%D7%9F%D6%B2I%D6%BA%D6%BE%D6%B4%D6%B8%D6%B1"
+      data-valid="google">מורדים מומחים שישמחו לעזור</span>
+
+    <a class="btn-black" target="_blank" href="https://drive.google.com/file/d/11-8iQ-O-qmwoQXa_mSb7f6sE5I4wYT8y/view?usp=sharing">טלגרם למורדים</a>
+    <a class="btn-black" target="_blank" href="https://drive.google.com/file/d/18v4RYN_IFHaOnafadHRJM3F4-ucuglWa/view?usp=sharing">מדריכון טלגרם</a>
+  </p>
+
+<script>
+  $('.iframelink').click(function()
+  {
+    let $el = $(this);
+    const xor = $el.data('xor');
+    let src = $el.data('src');
+    if (xor)
+    {
+      const valid = $el.data('valid');
+      const key = prompt('מה מילת הקסם?');
+      src = xor.dec().xor(key);
+      if (valid && src.indexOf(valid) < 0)
+      {
+        alert('לא מילת הקסם');
+        return false;
+      }
+    }
+    if (src)
+    {
+      $('#iframearea').html(`<iframe class="inner" src="${src}"></iframe>`);
+      $('.remove_with_iframe').remove();
+    }
+    return false;
+  });
+</script>
+</div>
+<div id="iframearea"></div>
+
