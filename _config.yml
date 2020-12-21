@@ -22,6 +22,7 @@
 # - Update Google indexing after changes to sitemap.xml
 # - use FB `Sharing Debugger` to check tags are good, preview of shared link and invalidate previously cached version --> https://developers.facebook.com/tools/debug/
 # - use Twitter `Card Validator` to check the Twitter Card Preview --> https://cards-dev.twitter.com/validator
+# - use Google `Rich Result` tool --> https://search.google.com/test/rich-results
 # - Audit site SEO. for example use - UberSuggest to check site
 
 title: המרד בהכחדה
