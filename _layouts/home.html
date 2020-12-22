@@ -1,146 +1,171 @@
 ---
 layout: default
 ---
-
+<!-- Home.html -->
 <div class="home">
+    <!-- Hero -->
+    <section class="hero  hero-bg ">
+        <div class="overlay h-100v w-100 flex flex-align-center aflex-justify-center flex-column hero-h  padding-hero">
+            <div class="hero-title mb-1 h-40 w-100 flex flex-align-center flex-justify-center">
+                <div class="table-caption">
+                    {{ page.hero.title }}
+                </div>
+            </div>
+            <h2 class="hero-text mb-1">
+                <p class="px-10 text-center">
+                    {{ page.hero.text }}
+                </p>
+            </h2>
+            <a class="btn-black" href="{{site.baseurl}}/crisis/">
+                {{ page.read-more }}
+            </a>
+        </div>
+    </section>
 
-<section class="hero  hero-bg ">
-<div class="overlay h-100v w-100 flex flex-align-center aflex-justify-center flex-column hero-h  padding-hero">
-
-  <div class="hero-title mb-1 h-40 w-100 flex flex-align-center flex-justify-center">
-    <div class="table-caption">
-      {{ page.hero.title }}
+    <div class="absolute w-50 left-50">
+        <img src="assets/images/hourglass.svg" alt="hourglass" , class="hourglass">
     </div>
-  </div>
-  <h2 class="hero-text mb-1">
-    <p class="px-10 text-center">
-      {{ page.hero.text }}
-    </p>
-  </h2>
-  <a class="btn-black" href="{{site.baseurl}}/crisis/">
-    {{ page.read-more }}
-  </a>
-</div>
-</section>
 
-<div class="absolute w-50 left-50">
-  <img src="assets/images/hourglass.svg" alt="hourglass", class="hourglass">
-</div>
+    <section class="about text-white font-bold pb-4 basic-padding ">
+        <h2 class="about-title mt-5 text-yellow text-xl">
+            מי אנחנו?
+        </h2>
+        <div class="about-content flex flex-align-center flex-justify-between  text-md">
+            <div class="">
+                <p>
+                    <span class="text-yellow">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה
+                    בבריטניה ב-2018 כמענה <span class="text-yellow">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי
+                    חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית
+                    שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
+                </p>
+                <p>
+                    הממשלה נכשלת בתפקידה לדאוג לאזרחי המדינה ולתקשר לציבור את חומרת המצב.
+                </p>
+            </div>
+            <div class="">
+                <p>
+                    לכן, הצטרפנו למרד - אמהות, אבות, סבים וסבתות, נשים, גברים, זקנים ונוער, מכל גיל, רקע ומקצוע אפשריים.
+                </p>
+                <a class="about-btn btn-black read-more">
+                    <img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-down">
+                </a>
+                <p class="mobile-hidden mobile-read-more">
+                    אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ
+                    מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
+                </p>
+                <p class="mobile-hidden mobile-read-more">
+                    המשימה שלנו היא לעורר מרד יצירתי בלתי-אלים ולהניע 3.5% מהאוכלוסייה,
+                </p>
+            </div>
+            <div class="mobile-hidden mobile-read-more">
+                <p>
+                    כדי לשבש את ה"עסקים כרגיל", עד שהממשלה תנקוט בפעולה אפקטיבית.
+                </p>
+                <p>
+                    אנחנו מבססים את הדרישות שלנו על הקונצנזוס המדעי בנושא ועל הנתונים המתפרסמים על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא
+                    (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
+                </p>
+                <br>
+                <a class="about-btn btn-black mobile-hidden mobile-read-more read-less">
+                    <img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-up">
+                </a>
+                <br>
+                <a class="about-btn btn-black" href="{{site.baseurl}}/crisis/">
+                    {{ page.read-more }}
+                </a>
+                </p>
+            </div>
+    </section>
 
-<section class="about text-white font-bold pb-4 basic-padding ">
-	<h2 class="about-title mt-5 text-yellow text-xl">
-		מי אנחנו?
-	</h2>
-	<div class="about-content flex flex-align-center flex-justify-between  text-md">
-	  <div class="">
-			<p>
-			<span class="text-yellow">"תנועת המרד בהכחדה"</span> (Extinction Rebellion או בקיצור XR) היא תנועה עולמית שנולדה בבריטניה ב-2018 כמענה <span class="text-yellow">למצב החירום חסר התקדים שבו אנו נמצאים</span> - משבר אקלים ומשבר אקולוגי חריפים. המדע ברור: אם נמשיך ב"עסקים כרגיל", נמצא את עצמנו בכוכב שרובו יהיה בלתי-ראוי למחיה ובעיצומה של הכחדה המונית שמתרחשת כבר היום. ישראל נמצאת במצב פגיע במיוחד.
-			</p>
-			<p>
-				הממשלה נכשלת בתפקידה לדאוג לאזרחי המדינה ולתקשר לציבור את חומרת המצב.
-			</p>
-	  </div>
-	  <div class="">
-			<p>
-				לכן, הצטרפנו למרד - אמהות, אבות, סבים וסבתות, נשים, גברים, זקנים ונוער, מכל גיל, רקע ומקצוע אפשריים.
-			</p>
-			<a class="about-btn btn-black read-more">
-				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-down">
-			</a>
-			<p class="mobile-hidden mobile-read-more">
-				אנחנו חוצים דת, מגזרים ודעות פוליטיות, למען מטרה משותפת. הדאגה והאהבה שלנו לילדינו, לבריאותנו ולחיים על פני כדור-הארץ מביאות אותנו לצאת ביחד מאזור הנוחות שלנו ולעמוד בנחישות אל מול ההרס וההכחשה.
-			</p>
-				<p class="mobile-hidden mobile-read-more">
-					המשימה שלנו היא לעורר מרד יצירתי בלתי-אלים ולהניע 3.5% מהאוכלוסייה,
-				</p>
-	  </div>
-	  <div class="mobile-hidden mobile-read-more">
-			<p>
-				כדי לשבש את ה"עסקים כרגיל", עד שהממשלה תנקוט בפעולה אפקטיבית.
-			</p>
-			<p>
-				אנחנו מבססים את הדרישות שלנו על הקונצנזוס המדעי בנושא ועל הנתונים המתפרסמים על-ידי מדעני אקלים ומוסדות־מחקר בני-סמכא (כגון הפאנל הבין-ממשלתי לשינוי אקלים, השירות המטאורולוגי העולמי, נאס"א).
-			</p>
-			<br>
-			<a class="about-btn btn-black mobile-hidden mobile-read-more read-less">
-				<img src="assets/images/arrow-down.svg" alt="arrow-down" class="arrow-up">
-			</a>
-			<br>
-			<a class="about-btn btn-black" href="{{site.baseurl}}/crisis/">
-				{{ page.read-more }}
-			</a>
-	  </p>
-	</div>
-</section>
+    <img src="assets/images/group.png" alt="illustration group" class="image-group">
 
-<img src="assets/images/group.png" alt="illustration group" class="image-group">
+    <section class="third-section flex flex-align-center flex-justify-between px-2 basic-padding">
+        <div class="square-margin">
+            <a class="square square-blue" href="{{site.baseurl}}/act-now/">
+                <div class="flex flex-column flex-justify-center h-100 square-content">
+                    <img src="assets/images/hourglass.svg" alt="hourglass" class="square-image">
+                    <div class="square-text">
+                        פעלו עכשיו
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="square-margin">
+            <a class="square square-blue" href="{{site.baseurl}}/crisis/">
+                <div class="flex flex-column flex-justify-center h-100 square-content">
+                    <img src="assets/images/prayinghands.svg" alt="prayinghands" class="square-image">
+                    <div class="square-text">
+                        מצב חירום
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="square-margin mobile-mb-2">
+            <a class="square square-blue" href="{{site.baseurl}}/join-us/">
+                <div class="flex flex-column flex-justify-center h-100 square-content">
+                    <img src="assets/images/bee.svg" alt="bee" class="square-image">
+                    <div class="square-text">
+                        הצטרפו אלינו
+                    </div>
+                </div>
+            </a>
+        </div>
 
-<section class="third-section flex flex-align-center flex-justify-between px-2 basic-padding">
-	<div class="square-margin">
-		<a class="square square-blue" href="{{site.baseurl}}/act-now/">
-			<div class="flex flex-column flex-justify-center h-100 square-content">
-				<img src="assets/images/hourglass.svg" alt="hourglass" class="square-image">
-				<div class="square-text">
-					פעלו עכשיו
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="square-margin">
-		<a class="square square-blue" href="{{site.baseurl}}/crisis/">
-			<div class="flex flex-column flex-justify-center h-100 square-content">
-				<img src="assets/images/prayinghands.svg" alt="prayinghands" class="square-image">
-				<div class="square-text">
-					מצב חירום
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="square-margin mobile-mb-2">
-		<a class="square square-blue" href="{{site.baseurl}}/join-us/">
-			<div class="flex flex-column flex-justify-center h-100 square-content">
-				<img src="assets/images/bee.svg" alt="bee" class="square-image">
-				<div class="square-text">
-					הצטרפו אלינו
-				</div>
-			</div>
-		</a>
-	</div>
+    </section>
 
-</section>
+    <section class="events-section pb-2 pt-1 basic-padding">
+        <h2 class="text-white events-title mobile-mx-2rema text-lg ">אירועים</h2>
+        <div data-tockify-component="calendar" data-tockify-calendar="xrisdiary"></div>
+        <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+    </section>
 
-<section class="events-section pb-2 pt-1 basic-padding">
-	<h2 class="text-white events-title mobile-mx-2rema text-lg ">אירועים</h2>
-	<div data-tockify-component="calendar" data-tockify-calendar="xrisdiary"></div>
-	<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-</section>
+    <section class="news-section pb-2 pt-1 basic-padding">
+        <h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
+        <div class="news-flex">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXRisrael%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187293865204"
+                    width="500"
+                    height="700"
+                    style="border:none;overflow:hidden"
+                    scrolling="no"
+                    frameborder="0"
+                    allowTransparency="true"
+                    allow="encrypted-media"
+                    class="mobile-hidden"></iframe>
+            <a class="twitter-timeline"
+               data-lang="he"
+               data-width="500"
+               data-height="700"
+               data-dnt="true"
+               href="https://twitter.com/IsraelRebellion?ref_src=twsrc%5Etfw">Tweets by IsraelRebellion</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
 
-<section class="news-section pb-2 pt-1 basic-padding">
-	<h2 class="text-white news-title mx-2rem text-lg">חדשות</h2>
-  <div class="news-flex">
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXRisrael%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=187293865204" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="mobile-hidden"></iframe>
-    <a class="twitter-timeline" data-lang="he" data-width="500" data-height="700" data-dnt="true" href="https://twitter.com/IsraelRebellion?ref_src=twsrc%5Etfw">Tweets by IsraelRebellion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-</section>
-
-<section class="social-section">
-  <div class="xr-online text-md text-center">
-    המרד ברשת
-  </div>
-	<div class="social-icons">
-		<a href="https://www.facebook.com/XRisrael/"> <img src="assets/images/facebook-pink.svg" alt="facebook" class="social-icon"> </a>
-		<a href="https://www.instagram.com/extinctionrebellionisrael/"> <img src="assets/images/instagram-pink.svg" alt="instagram" class="social-icon"> </a>
-		<a href="https://twitter.com/israelrebellion"> <img src="assets/images/twitter-pink.svg" alt="twitter" class="social-icon"> </a>
-		<a href="https://t.me/joinchat/AAAAAEf9iMmHzkyO29ZgyA"> <img src="assets/images/telegram-pink.svg" alt="telegram" class="social-icon"> </a>
-		<a href="https://www.youtube.com/channel/UC1PwSRMc51udqVCr3CV6TUg"> <img src="assets/images/youtube-pink.svg" alt="youtube" class="social-icon"> </a>
-	</div>
-	<div class="global-site text-center text-md">
-		<a class="text-pink" href="https://rebellion.global/">
-			לאתר המרד העולמי >
-		</a>
-	</div>
-</section>
-  {{ content }}
+    <section class="social-section">
+        <div class="xr-online text-md text-center">
+            המרד ברשת
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/XRisrael/"> <img src="assets/images/facebook-pink.svg" alt="facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/extinctionrebellionisrael/"> <img src="assets/images/instagram-pink.svg"
+                                                                                 alt="instagram"
+                                                                                 class="social-icon"> </a>
+            <a href="https://twitter.com/israelrebellion"> <img src="assets/images/twitter-pink.svg" alt="twitter" class="social-icon"> </a>
+            <a href="https://t.me/joinchat/AAAAAEf9iMmHzkyO29ZgyA"> <img src="assets/images/telegram-pink.svg"
+                                                                         alt="telegram"
+                                                                         class="social-icon"> </a>
+            <a href="https://www.youtube.com/channel/UC1PwSRMc51udqVCr3CV6TUg"> <img src="assets/images/youtube-pink.svg"
+                                                                                     alt="youtube"
+                                                                                     class="social-icon"> </a>
+        </div>
+        <div class="global-site text-center text-md">
+            <a class="text-pink" href="https://rebellion.global/">
+                לאתר המרד העולמי >
+            </a>
+        </div>
+    </section>
+    {{ content }}
 </div>
 
 
@@ -154,18 +179,20 @@ layout: default
         if (day.length < 2) day = '0' + day;
         return [year, month, day].join('');
     }
+
     var elements = document.querySelectorAll('[future-date]');
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
+    Array.prototype.forEach.call(elements, function (el, i) {
+        if (el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
     });
-		$(".read-more").click(function(event) {
-			$(this).hide()
-			$(".mobile-read-more").show("400")
-			$(".read-less").css('display', 'inline-block');
-		});
-		$(".read-less").click(function(event) {
-			$(this).hide()
-			$(".read-more").show("400")
-			$(".mobile-read-more").hide("400")
-		});
+    $(".read-more").click(function (event) {
+        $(this).hide()
+        $(".mobile-read-more").show("400")
+        $(".read-less").css('display', 'inline-block');
+    });
+    $(".read-less").click(function (event) {
+        $(this).hide()
+        $(".read-more").show("400")
+        $(".mobile-read-more").hide("400")
+    });
 </script>
+<!-- /Home.html -->

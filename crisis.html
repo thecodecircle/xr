@@ -1,6 +1,10 @@
 ---
 layout: default
 title: מצב חירום
+type: article
+description: זוהי קריאה לפעולה. לא קל להתוודע להרס העולם שלנו. אנחנו מאמינים שחשוב לדעת את האמת כדי לפעול עכשיו, יחד. לפי רוב העדויות, הזמן העומד לרשותנו קצר מאוד, האנושות חייבת לפעול במהרה כדי לשמור את ההתחממות הגלובלית מתחת ל-1.5 מעלות ולהאט ואף לעצור את הקצב המואץ של השפעות קטסטרופליות על החיים בכדור הארץ.
+image: /assets/images/diein.jpeg
+
 permalink: /crisis/
 sections:
 - section1
@@ -8,7 +12,7 @@ sections:
 - section3
 order: 1
 sitemap:
-  priority: 0.8
+  priority: 0.9
 ---
 <div class="crisis">
   <h1>אנחנו במצב חירום</h1>
@@ -355,9 +359,14 @@ sitemap:
 </div>
 
 <script>
-  $('h2').click(e => {
-    $(e.target).parent().children("div").toggle(150)
-    $(e.target).children("span").toggleClass('clicked');
-  })
+  /* Accordion handling */
+  /** Target H2 elements -
+   * when clicked Toggle the display of child div
+   * and rotate the Section Arrow to indicate Open / Closed state
+   * */
 
+  $('h2').click(e => {
+    $(e.target).parent().children("div").toggle(150) /* Display or hide the matched elements */
+    $(e.target).children("span").toggleClass('clicked'); /* Rotate Section Arrow to indicate open/closed position */
+  })
 </script>

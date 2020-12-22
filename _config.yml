@@ -32,6 +32,7 @@ url: "https://xrisrael.earth" # the base hostname & protocol for your site, e.g.
 
 # Site SEO Metadata (related to the `Jekyll SEO Tag` Plugin. Instructions: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 description:
+type: website
 #tagline: תנועת המרד בהכחדה
 author: IsraelRebellion
 twitter:
