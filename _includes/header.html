@@ -1,5 +1,5 @@
+<!-- header.html -->
 <header class="site-header">
-
   <div class="desktop-flex flex-align-center h-100 mr-85p">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -33,8 +33,9 @@
       </div>
     </nav>
   </div>
-  <div class="donate-join-desktop">
+  <div class="donate-join-desktop flex-row align-items-center">
     <a class="page-link" href="https://www.drove.com/campaign/5d1c920428df5500012295bd">תרמו לנו</a>
-    <a class="page-link btn-black btn-yellow" href="{{site.baseurl}}/join-us/">הצטרפו אלינו</a>
+    <a class="page-link btn-black btn-yellow block-size-auto" href="{{site.baseurl}}/join-us/">הצטרפו אלינו</a>
   </div>
 </header>
+<!-- /header.html -->

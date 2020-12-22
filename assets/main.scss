@@ -42,12 +42,25 @@ body{
   padding-bottom: 0;
 }
 
-
+/* Flex */
+.flex, .flex-row {
+  display: flex;
+}
 
 .flex-column{
+  display: flex;
   flex-direction: column;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+
+.block-size-auto {
+  block-size: auto;
+}
+/* Sizes */
 .h-100{
   height: 100%;
 }
@@ -78,6 +91,8 @@ body{
 .h-90v{
   height: 90vh;
 }
+
+/* Padding / Margin */
 .px-10{
   padding: 5px 30px 5px 30px;
 }
@@ -119,6 +134,8 @@ body{
 .mt-5{
   margin-top: 5rem;
 }
+
+/* Text */
 .text-white{
   color: white;
 }
@@ -248,9 +265,6 @@ body{
   font-family: $almoni;
   color: white;
   font-size: calc(12px + 1.5vw);
-}
-.flex{
-  display: flex;
 }
 a:visited{
   color: white
@@ -628,6 +642,7 @@ a.page-link:hover{
       display: inline-block;
     }
     span.clicked{
+      /* Rotate Section Arrow to indicate open/closed position */
       transform: rotate(270deg);
     }
   }

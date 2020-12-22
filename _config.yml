@@ -18,11 +18,54 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# SEO
+# - Update Google indexing after changes to sitemap.xml
+# - use FB `Sharing Debugger` to check tags are good, preview of shared link and invalidate previously cached version --> https://developers.facebook.com/tools/debug/
+# - use Twitter `Card Validator` to check the Twitter Card Preview --> https://cards-dev.twitter.com/validator
+# - use Google `Rich Result` tool --> https://search.google.com/test/rich-results
+# - Audit site SEO. for example use - UberSuggest to check site
+
 title: המרד בהכחדה
 email: your-email@example.com
-description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xrisrael.earth" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Site SEO Metadata (related to the `Jekyll SEO Tag` Plugin. Instructions: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+description:
+type: website
+#tagline: תנועת המרד בהכחדה
+author: IsraelRebellion
+twitter:
+  username: IsraelRebellion
+  card: summary_large_image
+facebook:
+  publisher: XRisrael
+logo: /assets/logo.svg
+social:
+  name: Israel Rebellion
+  links:
+    - https://twitter.com/IsraelRebellion
+    - https://www.facebook.com/XRisrael
+    - https://www.instagram.com/extinctionrebellionisrael/
+    - https://www.instagram.com/redrebelbrigadeisrael/
+    - https://rebellion.global/
+    - https://extinctionrebellion.uk/
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/about.webp
+
+#google_site_verification
+#webmaster_verifications:
+#  google: 1234
+#  bing: 1234
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+lang: il_HE
+timezone: Asia/Jerusalem
+
 #
 sass:
     sass_dir: _sass

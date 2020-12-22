@@ -1,12 +1,16 @@
+<!-- default.html -->
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'he' }}" dir="rtl" style="background:grey;">
 
+<!-- Custom Head -->
   {%- include head.html -%}
+<!-- ** Custom Head ** -->
   <head>
     <meta name="theme-color" content="#C80082" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="תנועת המרד בהכחדה" />
-    <meta property="og:image" content="{{ site.baseurl }}/assets/images/favicon.png" />
+<!--    <meta property="og:type" content="website" />-->
+<!--    <meta property="og:description" content="תנועת המרד בהכחדה" />-->
+<!--    <meta property="og:image" content="{{ site.baseurl }}/assets/images/favicon.png" />-->
+
     <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/assets/images/favicon-16x16.png">
@@ -39,3 +43,4 @@
   </body>
 
 </html>
+<!-- /default.html -->
