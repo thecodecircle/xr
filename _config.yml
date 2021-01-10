@@ -54,7 +54,8 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/about.webp
+      image: /assets/images/about.jpg
+
 
 #google_site_verification
 #webmaster_verifications:
