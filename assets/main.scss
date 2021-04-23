@@ -542,7 +542,7 @@ a.page-link:hover{
   }
 
 	.mobile-hidden{
-		display: none;
+		display: none !important;
 	}
   .table-caption{
      word-spacing: 9999rem;
