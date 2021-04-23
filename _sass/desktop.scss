@@ -223,7 +223,7 @@
     }
   }
   .desktop-hidden{
-    display: none;
+    display: none !important;
   }
   .trigger{
     display: flex;

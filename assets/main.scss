@@ -212,6 +212,11 @@ body{
 .btn-yellow:visited{
   color: black !important;
 }
+.btn-fullwidth {
+	width: 100%;
+	padding: 5px 0 !important;
+	text-align: center;
+}
 .video{
 	width: 100%
 }
@@ -542,7 +547,7 @@ a.page-link:hover{
   }
 
 	.mobile-hidden{
-		display: none;
+		display: none !important;
 	}
   .table-caption{
      word-spacing: 9999rem;
